@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.navbar { background: #008080; color: #fff; padding: 1em; }
+.navbar a { color: #fff; text-decoration: none; margin-right: 10px; }
+.container { padding: 1em; }
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 15px; }

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Contato - Surfskate{% endblock %}
+{% block content %}
+  <h2>Contato</h2>
+  {% if success %}
+    <p><em>{{ success }}</em></p>
+  {% endif %}
+  <form method="POST" action="{{ url_for('enviar_contato') }}">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+{% endblock %}

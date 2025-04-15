@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Eventos - Surfskate{% endblock %}
+{% block content %}
+  <h2>Próximos Eventos</h2>
+  <ul>
+    {% for ev in eventos %}
+      <li><strong>{{ ev.titulo }}</strong> – {{ ev.data }} <br> {{ ev.descricao }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
