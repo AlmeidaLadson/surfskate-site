@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos Recebidos</title>
+</head>
+<body>
+    <h1>Mensagens Recebidas</h1>
+
+    {% for contato in contatos %}
+        <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+            <p><strong>Nome:</strong> {{ contato.nome }}</p>
+            <p><strong>Email:</strong> {{ contato.email }}</p>
+            <p><strong>Mensagem:</strong> {{ contato.mensagem }}</p>
+        </div>
+    {% else %}
+        <p>Nenhuma mensagem recebida ainda.</p>
+    {% endfor %}
+</body>
+</html>
